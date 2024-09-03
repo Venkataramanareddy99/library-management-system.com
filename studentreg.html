@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Sign Up</title>
+    <link rel="stylesheet" href="studentlogin.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Student Sign Up</h2>
+        <form action="submit.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required placeholder="Name">
+
+            <label for="gender">Gender:</label>
+            <input type="radio" name="gender" value="male" >  M
+            <input type="radio" name="gender" value="female" > F
+            <br>
+            <label for="admission_no">Admission-No:</label>
+            <input type="text" id="admission_no" name="admission_no" required placeholder="Admission_No">
+
+            <label for="adhar">Aadhar:</label>
+            <input type="text" id="adhar" name="aadhar" pattern="[0-9]{12}" required title="Aadhar should be 12 digits" placeholder="Adhar">
+
+            <label for="mobile">Mobile:</label>
+            <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" placeholder="Mobile" required title="Mobile should be 10 digits"> 
+
+            <label for="branch">Branch:</label>
+            <input type="text" id="branch" name="branch" required placeholder="branch">
+
+            <label for="password">password:</label>
+            <input type="password" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required placeholder="password">
+
+            <label for="password">confirm_password:</label>
+            <input type="password" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required placeholder="confirm_password">
+
+            <input type="submit" name="save" value="Submit">
+        </form>
+    </div>
+</body>
+</html>

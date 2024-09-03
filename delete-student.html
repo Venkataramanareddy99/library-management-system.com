@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Delete Student</title>
+    <link rel="stylesheet" href="delete-student.css">
+    <link href='https://fonts.googleapis.com/css?family=Nosifer' rel='stylesheet'>
+</head>
+<body>
+    <div class="student-container">
+        <h1>Delete Student</h1>
+        <form id=" student-container" action="#" method="post">
+            <label for="Student"> Name:</label>
+            <input type="text" id="Name" name="name" required placeholder="Name">
+            <label for="hallTicket">HallTicket:</label>
+            <input type="number" id="hallTicket" name="hallTicket" required placeholder="HallTicket">
+            <label for="Branch">Choose a Branch:</label>
+            <select name="Branch" id="Branch">
+                <optgroup label="Branch">
+                    <option value="Mpc">Mpc</option>
+                    <option value="Mpcs">Mpcs</option>
+                    <option value="Dscs">Dscs</option>
+                    <option value="Azc">Azc</option>
+                    <option value="Bzc">Bzc</option>
+                    <option value="Bcom-comp">B.com-comp</option>
+                    <option value="Bcom-General">B.com-General</option>
+                    <option value="Hep">Hep</option>
+                    <option value="Eep">Eep</option>
+                    <option value="Het">Het</option>
+                </optgroup>
+            </select>
+            <button onclick="window.location.href='#';">Delete</button>
+        </form>
+    </div>
+</body>
+</html>

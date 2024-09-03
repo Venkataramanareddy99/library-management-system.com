@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Faculty Login</title>
+    <link rel="stylesheet" href="faculty-login.css">
+    <link href='https://fonts.googleapis.com/css?family=Nosifer' rel='stylesheet'>
+</head>
+<body>
+    <div class="login-container">
+        <h1>Faculty Login</h1>
+        <form id="loginForm" action="#" method="post">
+            <label for="hallTicket">Teacher id:</label>
+            <input type="text" id="teacher id" name="teacher id" pattern="[0-9]{12}" required placeholder="id">
+            <label for="phoneNumber">Mobile Number:</label>
+            <input type="tel" id="phoneNumber" name="phoneNumber"  pattern="[A-Za-z]{3}" required placeholder="phoneNumber">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required placeholder="password">
+            <button onclick="window.location.href='Home.html';">login</button>
+            <button onclick="window.location.href='facultyreg.html';">sign-up</button>
+        </form>
+        <div class="otp-container" id="otpContainer">
+            <p>Enter the OTP sent to your mobile number..</p>
+            <label for="otp">OTP:</label>
+            <input type="text" id="otp" name="otp" required placeholder="OTP">
+            <button type="submit3">Verify OTP</button>
+        </div>
+    </div>
+
+    <script>
+        const loginForm = document.getElementById("loginForm");
+        const otpContainer = document.getElementById("otpContainer");
+
+        loginForm.addEventListener("submit", function (event) {
+            event.preventDefault();
+            otpContainer.style.display = "block"; // Show OTP container
+            loginForm.style.display = "none"; // Hide login form
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Enrollment</title>
+    <link rel="stylesheet" href="student-enrollment.css">
+    <link href='https://fonts.googleapis.com/css?family=Nosifer' rel='stylesheet'>
+</head>
+<body>
+    <div class="container">
+        <h2>Student Enrollment</h2>
+        <form action="submit.php" method="post">
+            <label for="name">Name :</label>
+            <input type="text" id="name" name="name" required placeholder="Name">
+            <label for="gender">Gender :</label>
+            <input type="radio" name="gender" value="male" >  M
+            <input type="radio" name="gender" value="female" > F
+            <br>
+            <label for="Admission-No">Admission-No :</label>
+            <input type="text" id="admission_no" name="Admission-No" required placeholder="Admission-No">
+            <label for="aadhar">Aadhar :</label>
+            <input type="text" id="adhar" name="aadhar" pattern="[0-9]{12}" required title="Aadhar should be 12 digits" placeholder="Adhar">
+            <label for="mobile">Mobile :</label>
+            <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" placeholder="Mobile" required title="Mobile should be 10 digits"> 
+            <label for="branch">Branch :</label>
+            <input type="text" id="branch" name="branch" required placeholder="branch">
+
+            <input type="button" value="Submit">
+        </form>
+    </div>
+</body>
+</html>

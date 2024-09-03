@@ -1,0 +1,78 @@
+ body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+        .book-container {
+            max-width: 200px;
+            margin: 0 40%;
+           
+            padding: 10px;
+            background-color:#040720;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+          color: whitesmoke;
+          text-align: center;
+          font-family:'Nosifer';
+          font-size: 20px;
+          text-shadow: 0.5vw 0.5vw 3vw   aqua;
+        }
+        label {
+            display: block;
+            color: whitesmoke;
+            margin: 10px 0;
+        }
+        input[type="text"], input[type="number"], input[type="date"] input[type="text"],input[type="number"], input[type="tel"],input[type="text"]{
+            width: 80%;
+            padding: 4px;
+            margin: 2px 0;
+            border: 1px solid black;
+            border-radius: 3px;
+        }
+       /* Style the label */
+label[for="Branch"] {
+  color: white;
+}
+
+/* Style the select element */
+select#Branch {
+  width: 90%;
+  padding: 5px;
+  margin: 2px 0 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Style the optgroup */
+optgroup[label="Branch"] {
+  font-weight: bold;
+  color:white; 
+  display: flexbox;
+  background-color: #040720;
+}
+
+/* Style the options */
+select#Branch option {
+  font-size: 16px;
+  color: white;
+  background-color: #040720;
+}
+
+/* Hover effect for options */
+select#Branch option:hover {
+  background-color: #040720;
+}
+
+        button{
+            width: 90%;
+            padding: 5px;
+            background-color: goldenrod;
+            color: blacks;
+            border: none;
+            border-radius: 3px;
+            cursor:pointer;
+        }
+        button:hover {
+            background-color:green;
+        }

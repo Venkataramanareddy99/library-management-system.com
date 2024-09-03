@@ -1,0 +1,44 @@
+ body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+        .container {
+            max-width: 200px;
+            margin: 0 40%;
+            padding: 10px;
+            background-color: #040720;
+            position: fixed;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: whitesmoke;
+            text-align: center;
+            font-family: 'nosifer';
+            font-size: 39;
+        }
+        label {
+            display: block;
+            color: whitesmoke;
+            margin: 10px 0;
+        }
+        input[type="text"], input[type="num"] {
+            width: 85%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid black;
+            font-family: 'nosifer';
+            border-radius: 3px;
+        }
+             button {
+            width: 47%;
+            padding: 5px;
+            background-color: goldenrod;
+            color: blacks;
+            border: none;
+            border-radius: 3px;
+            cursor:pointer;
+            }
+            button:hover {
+            background-color:green;
+            }

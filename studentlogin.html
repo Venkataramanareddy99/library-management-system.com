@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Login</title>
+    <link rel="stylesheet" href="studentlogin.css">
+    <link href='https://fonts.googleapis.com/css?family=Nosifer' rel='stylesheet'>
+
+</head>
+
+<body>
+    <div class="login-container">
+        <h1>Student Login</h1>
+        <form id="loginForm" action="#" method="post">
+            <label for="hallTicket">Hall Ticket:</label>
+            <input type="text" id="hallTicket" name="hallTicket" required placeholder="HallTicket">
+            <label for="phoneNumber">Mobile Number:</label>
+            <input type="tel" id="phoneNumber" name="phoneNumber" required placeholder="phoneNumber" pattern="[0-9]{10}" title="Enter a valid 10-digit phone number">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required placeholder="password">
+            <button id="loginButton">Login</button>
+            <button onclick="window.location.href='studentreg.html';">Sign-up</button>
+        </form>
+        <div class="otp-container" id="otpContainer">
+            <p>Enter the OTP sent to your mobile number..</p>
+            <label for="otp">OTP:</label>
+            <input type="text" id="otp" name="otp" required placeholder="OTP">
+            <button type="submit3" id="verifyOtpButton">Verify OTP</button>
+        </div>
+    </div>
+
+    <script>
+        const loginForm = document.getElementById("loginForm");
+        const otpContainer = document.getElementById("otpContainer");
+        const loginButton = document.getElementById("loginButton");
+        const verifyOtpButton = document.getElementById("verifyOtpButton");
+
+        loginForm.addEventListener("submit", function (event) {
+            event.preventDefault();
+            otpContainer.style.display = "block"; // Show OTP container
+            loginForm.style.display = "none"; // Hide login form
+
+            // Simulate OTP generation (Replace this with actual server-side logic)
+            const generatedOTP = Math.floor(100000 + Math.random() * 900000);
+            alert("OTP generated: " + generatedOTP);
+
+            verifyOtpButton.addEventListener("click", function () {
+                const enteredOTP = document.getElementById("otp").value;
+
+                // Simulate OTP verification (Replace this with actual server-side logic)
+                if (enteredOTP === generatedOTP.toString()) {
+                    alert("OTP verified. You are now logged in.");
+                } else {
+                    alert("Incorrect OTP. Please try again.");
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

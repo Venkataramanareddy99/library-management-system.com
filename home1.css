@@ -1,0 +1,182 @@
+
+*
+/* Styles for the header section */
+.head {
+  background-image : 
+  url('C:/Users/venka/OneDrive/Pictures/logo1.jfif'),
+  url('C:/Users/venka/OneDrive/Pictures/logo3.png');
+  background-repeat : no-repeat,no-repeat;
+  background-position-x: 4%,97%;
+  background-position-y: 0%,40% ;
+  background-size: 10% ,11%;
+}
+.head h1{
+  color:#040720;
+  padding-top: 0;
+  padding-bottom: 3.5%;
+  height: 0;
+  cursor: none;
+  width: 100%;
+  font-size: 50px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.head h2{
+  color:brown;
+  font-size: 26px;
+  cursor: none;
+  padding: 0.2%;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.head h3{
+  color:green;
+  cursor: none;
+  font-size: 29px;
+  padding-top:0.1%;
+  padding-bottom: 3%;
+  font-family: 'Courier New', Courier, monospace;
+}
+/* Styles for the navigation bar */
+.menu__bar {
+    background-color:#040720;
+    height: 40px;
+    width: 100%;
+    border-radius: 0;
+    position: relative;
+    display: flex;
+  
+  }
+  .menu__bar ul{
+    list-style:none;
+    display: flex;
+    position: relative;
+  }
+  .menu__bar ul li{
+    padding: 0.5%;
+    display: flex;
+    position: relative;
+  }
+  .menu__bar ul li a{
+    height: 50px;
+    padding: 0 20px;
+    color:white;
+    border-radius: 2%;
+    display: flex;
+    text-decoration: solid;
+    font-size: 15px;
+    transition: 0.1em;;
+  }
+  .menu__bar ul li a:hover{
+  color:aqua;
+  }
+
+/* Styles for the Home link */
+.menu__bar ul {
+/* Add styles for the Home link */
+padding:0;
+display: flex;
+}
+
+/* Styles for the Registration dropdown */ 
+.dropdown__menu1 ul {
+/* Add styles for the Registration dropdown menu */
+display: block;
+padding: 2px;
+position:relative ;
+transition-duration: 0s;
+
+}
+
+/* Styles for the Registration sub-menu items (Student and Faculty) */
+.dropdown__menu1 ul li {
+/* Add styles for the sub-menu items */
+height: 30px;
+width: 50px;
+padding: 5px;
+display: block;
+position:inherit;
+background-color:#040720;
+}
+
+/* Styles for the transactions dropdown */
+.dropdown__menu2 ul {
+/* Add styles for the transactions dropdown menu */
+display: contents;
+}
+/* Styles for the transactions sub-menu items */
+.dropdown__menu2 ul li {
+/* Add styles for the sub-menu items */
+height: 15px;
+width: 100px;
+position: relative;
+background-color: #040720;
+color: red;
+}
+
+/* Styles for the E-Journals dropdown */
+.dropdown__menu3 ul {
+/* Add styles for the E-Journals dropdown menu */
+display: block;
+position: relative;
+}
+
+/* Styles for the E-Journals sub-menu items */
+.dropdown__menu3 ul li {
+/* Add styles for the sub-menu items */
+height: 15px;
+width: 100px;
+background-color: #040720;
+color: red;
+}
+
+/* Styles for the Downloads dropdown */
+.dropdown__menu4 ul {
+/* Add styles for the Downloads dropdown menu */
+display: block;
+position: relative;
+}
+/* Styles for the Downloads sub-menu items */
+.dropdown__menu4 ul li {
+/* Add styles for the sub-menu items */
+height: 15px;
+width: 100px;
+display: block;
+background-color: #040720;
+}
+
+/* Styles for the Search dropdown */
+.dropdown__menu5 ul {
+/* Add styles for the Search dropdown menu */
+display: block;
+position: relative;
+}
+
+/* Styles for the Search sub-menu items */
+.dropdown__menu5 ul li {
+/* Add styles for the sub-menu items */
+height: 15px;
+width: 100px;
+display: block;
+background-color: #040720;
+}
+
+/* Styles for the Login dropdown */
+.dropdown__menu6 {
+/* Add styles for the Login dropdown menu */
+display: block;
+position: relative;
+}
+
+/* Styles for the Login sub-menu items (Admin, Student, Faculty) */
+.dropdown__menu6 ul {
+/* Add styles for the sub-menu items */
+height: 15px;
+width: 100px;
+display: block;
+background-color: #040720;
+}
+
+
+
+
+
+

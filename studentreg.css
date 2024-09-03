@@ -1,0 +1,55 @@
+ body {
+            font-family: Arial, sans-serif;
+            background-color: whites;
+            margin: 0;
+            color: white;
+            padding: 0;
+        }
+
+        .container {
+            background-color: #040720;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 200px;
+            color: white`;
+            margin: 0 auto;
+            padding: 20px;
+            margin-top: 50px;
+        }
+
+        h2 {
+            color: whitesmoke;
+            text-align: center;
+            font-family: 'Nosifer';
+            font-size: 20px;
+            text-shadow: 0.5vw 0.5vw 3vw aqua;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="text"], input[type="tel"], input[type="password"], input[type="password"]  {
+            width: 90%;
+            padding: 7px;;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        input[type="radio"]{
+            width: 8%;
+        }
+        input[type="submit"] {
+            background-color: goldenrod;
+            color: #fff;
+            width: 98%;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color:green;
+        }
